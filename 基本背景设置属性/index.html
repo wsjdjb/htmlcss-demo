@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		div{
+			width:200px;
+			height:200px;
+			border:2px solid skyblue;
+			margin:50px;
+			background-image:url(images/img.jpg);
+			background-repeat:no-repeat;
+		}
+
+		.div1{
+			background-color:rgb(0,0,0);
+			color:white;
+			background-repeat:no-repeat;
+		}
+		.div2{
+			background-repeat:repeat-x;
+		}
+		.div2 p{
+			width:50px;
+			height:50px;
+			background-color:red;
+		}
+		.div3{
+			background-repeat:repeat-y;
+			background-image:url(../images/img2.jpg);
+		}
+		.div4{
+			width:100px;
+			height:100px;
+		}
+		.div5{
+			width:150px;
+			height:150px;
+		}
+		.div6{
+			background-position:left bottom;
+		}
+		.div7{
+			background-position:20px 50px;
+		}
+		.div8{
+			background-position:-50px -20px;
+		}
+		/*
+		背景相关属性的显示规则
+		1.设置背景属性必须容器，且容器必须有宽高。
+		2.背景图片上可以插入内容（文本、图片、元素）。
+		3.背景图片尺寸小于容器尺寸，背景图片会平铺。
+		4.背景图片尺寸大于容器尺寸，背景图片会被裁切。
+		5.背景图片尺寸等于容器尺寸，背景图片刚好显示。
+		 */
+	</style>
+</head>
+<body>
+	<div class="div1">骏马啊！</div>
+	<div class="div2">
+		<p></p>
+	</div>
+	<div class="div3">
+		骏马啊！
+		<img src="images/img.jpg" alt="">
+	</div>
+	<div class="div4">骏马啊！</div>
+	<div class="div5">骏马啊！</div>
+	<div class="div6">骏马啊！</div>
+	<div class="div7">骏马啊！</div>
+	<div class="div8">骏马啊！</div>
+	<img src="images/img2.jpg" alt="">
+</body>
+</html>
