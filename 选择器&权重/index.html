@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            width: 200px;
+            height: 100px;
+        }
+        h4{
+            background: yellow;
+        }
+        /* div{
+            background: pink;
+        } */
+        h4,div{
+            background: plum;
+        }
+        /* div div{
+            background: green;
+        } */
+        div+p{
+            background: red;
+        }
+        h3~p{
+            background: burlywood;
+        }
+        h5{
+            background: greenyellow;
+        }
+        h5>div{
+            background: blue;
+        }
+
+        h6[id]{
+            background: darkblue;
+        }
+        h6[id="h62"]{
+            background: aqua;
+        }
+        h6[id*="h6"]{
+            background: crimson;
+        }
+        h6[id~="h6"]{
+            background: chartreuse;
+        }
+        h6[id^="h6"]{
+            background: lightblue;
+        }
+        h6[id|="h6"]{
+            background: fuchsia;
+        }
+
+        a:link{
+            background: red;
+        }
+        a:visited{
+            background: orange;
+        }
+        a:hover{
+            background: yellow;
+        }   
+        a:active{
+            background: green;
+        }
+        
+        a+div{
+            width: 600px;
+            height: 600px;
+        }
+        div:first-child{
+            background: burlywood;
+        }
+        div:nth-child(2){
+            background: gray;
+        }
+        div:nth-of-type(3){
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        p0
+    </p>
+    <h3>
+        h3
+    </h3>
+    <h4>
+        h4
+    </h4>
+    <div>
+        div1
+        <div>
+            div1-1
+
+        </div>
+    </div>
+    <p>
+        p1
+    </p>
+    <p>
+        p2
+    </p>
+    <p>
+        p3
+    </p>
+
+    <h5>
+        h5 
+        <div>
+            div2
+            <h5>
+                h5-1
+                <div>
+                    div2-1
+                </div>
+            </h5>
+        </div>
+    </h5>
+    <h6 id="h6">h6</h6>
+    <h6 id="h6 1">h6 1</h6>
+    <h6 id="h6 2">h6 2</h6>
+    <h6 id="h6-3">h6-3</h6>
+
+    <a href="">a</a>
+    <div  >
+        fat
+        <div >
+            big bro
+            <div >
+                big nep
+            </div>
+            <div >
+                lit nep
+            </div>
+        </div>
+        <div >
+            lit bro
+        </div>
+        <div >
+            lit lit bro
+        </div>
+    </div>
+
+    <div >
+        mom
+        <div >
+            big sis
+        </div>
+        <div >
+            lit sis
+        </div>
+    </div>
+</body>
+</html>
