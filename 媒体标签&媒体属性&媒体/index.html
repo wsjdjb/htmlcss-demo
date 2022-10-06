@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        .hr-solid-content {
+            color: #a2a9b6;
+            border: 0;
+            font-size: 20px;
+            padding: 1em 0;
+            position: relative;
+        }     
+        .hr-solid-content::before {
+            content: attr(data-content);
+            position: absolute;
+            padding: 0 1ch;
+            line-height: 1px;
+            border: solid #d0d0d5;
+            border-width: 0 99vw;
+            width: fit-content;
+            /* for 不支持fit-content浏览器 */
+            white-space: nowrap;
+            left: 50%;
+            transform: translateX(-50%);
+        }  
+        a{
+            text-decoration: overline;
+        }
+    </style>
+
+</head>
+<body>
+     <select>
+        <option value="">菜单选择1</option>
+        <option value="">菜单选择2</option>
+        <option value="">菜单选择3</option>
+     </select>
+     <br>
+     <textarea name="" id="" cols="30" rows="10"></textarea>
+    <hr class="hr-solid-content" data-content="基本媒体标签">
+
+     <embed src="../images/korgi.png" type="">
+
+    <hr class="hr-solid-content" data-content="嵌入标签">
+
+        <a href="">这是a标签</a>
+        <p id="content">这是顶部</p>
+        <p>这是页面内容</p>
+        <p>这是页面内容</p>
+        <p>这是页面内容</p>
+        <p>这是页面内容</p>
+        <p>这是页面内容</p>
+        <p>这是页面内容</p>
+        <p>这是页面内容</p>
+        <p>这是页面内容</p>
+        <p>这是页面内容</p>
+        <p>这是页面内容</p>
+        <p>这是页面内容</p>
+        <p>这是页面内容</p>
+        <p>这是页面内容</p>
+        <p>这是页面内容</p>
+        <p>这是页面内容</p>
+        <p>这是页面内容</p>
+        <p>这是页面内容</p>
+        <p>这是页面内容</p>
+        <a href="#content">回到顶部</a>
+    <hr class="hr-solid-content" data-content="图片&超文本标签">
+</body>
+</html>
