@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="../css/reset.css">
     <style type="text/css">
-        .hr-solid-content {
+        /* .hr-solid-content {
             color: #a2a9b6;
             border: 0;
             font-size: 20px;
@@ -22,19 +22,96 @@
             border: solid #d0d0d5;
             border-width: 0 99vw;
             width: fit-content;
-            /* for 不支持fit-content浏览器 */
+            
             white-space: nowrap;
             left: 50%;
             transform: translateX(-50%);
         }  
         a{
             text-decoration: overline;
+        } */
+        /* 图片&超文本标签 */
+
+
+    /* div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 2s, transform 2s;
+    }
+    div:hover {
+    } */
+    /* transform: translate(500px, 1000px) rotate(20deg)  scale(2,2) skew(20deg) rotateX(150deg); */
+    /* transform: translate(500px,1000px); */
+    /* transform: rotate(20deg); */
+    /* transform: scale(2,2); */
+    /* transform: skew(20deg); */
+    /* transform: rotateX(150deg); */
+    /* transform: rotateZ(90deg); */
+    
+
+
+
+
+        /* 转换 */
+
+        /* div {
+        width: 100px;
+        height: 100px;
+        background: red;
+        transition: width 2s;
         }
+        div:hover {
+        width: 300px;
+        } */
+
+        /* div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s, transform 2s;
+            transition-delay: 1s;
+        }
+        div:hover {
+            width: 300px;
+        } 
+        #div1:hover {transition-timing-function: linear;}
+        #div2:hover {transition-timing-function: ease;}
+        #div3:hover {transition-timing-function: ease-in;}
+        #div4:hover{transition-timing-function: ease-out;}
+        #div5:hover {transition-timing-function: ease-in-out;}
+ */
+
+
+        /* 过渡 */
+        div{
+            width: 200px;
+            height: 200px;
+            animation-name: example;
+	        animation-duration: 4s;
+            animation-delay: -4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease;
+            
+        }
+        /* @keyframes example {
+        from {background-color: red;}
+        to {background-color: yellow;}
+        } */
+        @keyframes example {
+        0%   {background-color:red; left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+        }
+        /* 动画 */
     </style>
 
 </head>
 <body>
-     <select>
+     <!-- <select>
         <option value="">菜单选择1</option>
         <option value="">菜单选择2</option>
         <option value="">菜单选择3</option>
@@ -43,11 +120,11 @@
      <textarea name="" id="" cols="30" rows="10"></textarea>
     <hr class="hr-solid-content" data-content="基本媒体标签">
 
-     <embed src="../images/korgi.png" type="">
+     <embed src="../images/korgi.png" type=""> -->
 
     <hr class="hr-solid-content" data-content="嵌入标签">
 
-        <a href="">这是a标签</a>
+        <!-- <a href="">这是a标签</a>
         <p id="content">这是顶部</p>
         <p>这是页面内容</p>
         <p>这是页面内容</p>
@@ -67,7 +144,38 @@
         <p>这是页面内容</p>
         <p>这是页面内容</p>
         <p>这是页面内容</p>
-        <a href="#content">回到顶部</a>
+        <a href="#content">回到顶部</a> -->
     <hr class="hr-solid-content" data-content="图片&超文本标签">
+
+
+
+
+        <!-- <div>
+            div1
+        </div> -->
+
+
+
+
+    <hr class="hr-solid-content" data-content="转换">
+    <!-- <div></div> -->
+
+        <!-- <div id="div1"></div>
+        <br>
+        <div id="div2"></div>
+        <br>
+        <div id="div3"></div>
+        <br>
+        <div id="div4"></div>
+        <br>
+        <div id="div5"></div> -->
+
+    <hr class="hr-solid-content" data-content="过渡">
+
+
+            <div>
+                div1
+            </div>
+    <hr class="hr-solid-content" data-content="动画">
 </body>
 </html>

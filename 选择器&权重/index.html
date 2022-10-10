@@ -80,6 +80,34 @@
         div:nth-of-type(3){
             background: red;
         }
+        /* 其他 */
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        h4{
+            width: 50px;
+            height: 50px;
+        }
+         /* div:first-child{
+            background: darkorange;
+        } */
+        /* h4:first-child{
+            background: crimson;
+        } */
+        /* div:first-of-type{
+            background: bisque;
+        } */
+        /* div:nth-of-type(1){
+            background: aqua;
+        }  */
+        div:nth-child(1){
+            background: red;
+        }
+        h4:nth-child(1){
+            background: blue;
+        }
+        /* 结构伪类选择器 */
     </style>
 </head>
 <body>
@@ -155,5 +183,13 @@
             lit sis
         </div>
     </div>
+
+    <!-- 其他 -->
+    <div>div1
+        <h4>h4</h4>
+        <h4>h4</h4>
+    </div>
+    <div>div2</div>
+    <!-- 结构伪类选择器 -->
 </body>
 </html>

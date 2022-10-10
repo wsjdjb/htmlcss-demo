@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        main{
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom:0;
+    left: 0;
+    margin: auto;
+    background: cyan;
+    animation: move 1s linear  infinite;
+
+}
+main section:first-child{
+    width:200px;
+    height: 400px;
+    background:black;
+    border-radius:200px 0 0 200px;
+    float:left;
+    position:relative;
+}
+main section:last-child{
+            width: 200px;
+            height: 400px;
+            background: #fff;
+            border-radius:0 200px 200px 0;
+            float: right;
+            position: relative;
+            /* box-shadow: 0 0 5px black;  */
+
+        }
+        main section article{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+        }
+        main section:first-child article{
+            background: black;
+            top: 0;
+            left: 100px;
+            z-index: 1;
+        }
+        main section:last-child article{
+            background: #fff;
+            bottom: 0;
+            left: -100px;
+        }
+        main section article aside{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+        main section:first-child article aside{
+            background: #fff;
+
+        }
+        main section:last-child article aside{
+            background: #000;
+
+        }
+        @keyframes move{
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(180deg);
+            }
+            50%{
+                transform: rotate(360deg);
+            }
+            75%{
+                transform: rotate(540deg);
+            }
+            100%{
+                transform: rotate(720deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <article>
+                <aside></aside>
+            </article>
+        </section>
+        <section>
+            <article>
+                <aside></aside>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
